@@ -1,10 +1,15 @@
 
 
 
-import requests, time, pandas, random, json
+import requests, time, pandas, random, json, os
 import numpy as np
+from dotenv import load_dotenv
+
+load_dotenv()
 
 def Medium(inputNumber, PandasDataFrame, **kwargs): # this is the function, it's name, two required inputs and **kwargs for variable input
+
+    print(f'secret key: {os.getenv("SECRET_KEY")} \n')
 
     #let's keep track of our function :)
     start_time = time.time()
