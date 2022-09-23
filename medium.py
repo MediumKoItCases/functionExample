@@ -64,7 +64,7 @@ def Medium(inputNumber, PandasDataFrame, **kwargs): # this is the function, it's
 
 frame = pandas.DataFrame(columns=['numbers'])
 frame['numbers'] = np.linspace(random.randint(1, 5), random.randint(35, 125), dtype=int)
-print(f'{frame.head(1)}\n')
+print(f'{frame.describe}\n')
 
 print(Medium(35, frame, friet='lekker')) # -> providing a number (35), a pandas.DataFrame and the **kwargs named 'friet' which is lekker (nice)
     
